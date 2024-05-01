@@ -1,5 +1,3 @@
-[ToC]
-
 # Data Mining & Machine Learning
 
 Code Repository for the undergraduate tutorials of data mining & machine learning of Shanghai Business School (SBS)
