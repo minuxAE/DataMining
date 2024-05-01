@@ -36,5 +36,28 @@ def imp_method():
     data_mode = imp_mode.fit_transform(data)
     print(data_mode)
 
+"""
+插值策略4：scipy.interpolate
+"""
+
+from scipy.interpolate import interp1d
 def interpolate_method():
-    pass
+    for j in range(data.shape[1]):
+        sub_data = data[:, j]
+        indices = np.arange(len(sub_data))
+        known_indices = indices[~np.isnan(sub_data)]
+        known_values = sub_data[~np.isnan(sub_data)]
+        
+        # Linear interpolation
+        interp_func = interp1d(known_indices, known_values, kind='linear', fill_value='extrapolate')
+        filled_values = interp_func(indices)
+        data[:, j] = filled_values
+    return data
+
+
+def main():
+    filled_data = interpolate_method()
+    print(filled_data)
+
+if __name__ == '__main__':
+    main()
