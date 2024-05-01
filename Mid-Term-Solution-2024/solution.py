@@ -144,6 +144,8 @@ def conf_matrix(X, y, mdl, mdl_name='Logistic Regression', dataset='circles'):
     print('Precision is {:.4f}%'.format(100*precision(y_test, y_pred)))
     print('Recall is {:.4f}%'.format(100*recall(y_test, y_pred)))
 
+    return y_test, y_pred, X_test
+
 def main():
     ## 实验A
     ## 算法评估，将三个数据集传递给clf_func函数
