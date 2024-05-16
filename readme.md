@@ -25,3 +25,4 @@ Code Repository for the undergraduate tutorials of data mining & machine learnin
 4. 机器（统计）学习方法. 李航.
 5. 机器学习算法入门与编程实践. 唐四薪.
 6. Python数据挖掘与机器学习实战. 方巍.
+7. Python设计模式. Chetan, Ciridhar.
