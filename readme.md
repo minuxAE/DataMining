@@ -18,6 +18,8 @@ Code Repository for the undergraduate tutorials of data mining & machine learnin
 
 ## Ch7. Kernel Method & SVM
 
+## Ch8. Pattern Mining
+
 # References
 1. Data Mining and Analysis: Fundamental Concepts and Algorithms. Zaki & Meira Jr.
 2. Pattern Recognition & Machine Learning. Bishop.
